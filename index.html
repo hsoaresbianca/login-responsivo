@@ -19,14 +19,18 @@
                 
                 <form action="login.php" method="post" autocomplete="on">
                     
-                    <label for="iemail">Email: </label>
-                    <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="usuario@email"> <br>
+                    <div id="div-email">
+                        <label for="iemail">👤</label>
+                        <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="E-mail">
+                    </div>
 
-                    <label for="isenha">Senha: </label>
-                    <input type="password" name="senha" id="isenha" required minlength="8"> <br>
+                    <div id="div-senha">
+                        <label for="isenha">🔐</label>
+                        <input type="password" name="senha" id="isenha" required minlength="8" placeholder="Senha">
+                    </div>
 
-                    <input type="submit" value="Entrar">
-                    <input type="reset" value="Limpar">
+                    <input id="entrar" type="submit" value="Entrar"> <br>
+                    <input id="esqueci-senha" type="reset" value="Esqueci a senha">
                 </form>
             </div>
         </section>
