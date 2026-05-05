@@ -2,8 +2,11 @@
 
 /* 
 PALETA DE CORES
-Verde: #49a09d
-Lilás: #5f2cb2
+roxo #4A0059
+pink #F2059F
+azul #0583F2
+verde #05F2AF
+verdinho #AFFFFF
 */
 
 * {
@@ -12,10 +15,21 @@ Lilás: #5f2cb2
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    --roxo:#4A0059;
+    --roxinho:#9c0cb9;
+    --rosa:#F2059F;
+    --rosinha:#f389ce;
+    --azul:#0583F2;
+    --azulziho:#7eb8eb;
+    --verde:#05F2AF;
+    --verdinho:#AFFFFF;
+}
+
 body {
     height: 100vh;
     width: 100vw;
-    background-color: #5f2cb2;
+    background-color: var(--roxinho);
     position: relative;
 }
 
@@ -24,23 +38,20 @@ main {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-}
-
-section#login {
-    width: 250px;
+    height: 95vh;
+    width: 80vw;
 }
 
 div#imagem {
-    height: 200px;
+    height: 150px;
     background-image: url(../imagens/bg-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: right center;
     border-radius: 20px 20px 0px 0px;
-
 }
 
 div#formulario {
-    height: 350px;
     background-color: white;
     border-radius: 0px 0px 20px 20px;
     padding: 10px;
@@ -48,7 +59,7 @@ div#formulario {
 
 div#formulario h1 {
     text-align: center;
-    padding: 10px 0px;
+    margin-bottom: 10px;
 }
 
 div#formulario p {
@@ -57,48 +68,61 @@ div#formulario p {
 }
 
 #div-email, #div-senha {
-    background-color: #5f2cb2;
+    background-color: var(--azul);
     border-radius: 8px;
-    margin-top: 8px;
+    margin-top: 10px;
     padding: 9px;
+}
+
+ion-icon {
+    color: white;
+    width: 25px;
+    height: 25px;
+    margin-right: 9px;
 }
 
 #iemail, #isenha {
     padding: 8px;
-    background-color: #49a09d;
+    background-color: var(--verdinho);
     border-radius: 8px;
     border: none;
+    width: 75%;
 }
 
 #entrar, #esqueci-senha {
     width: 100%;
     padding: 11px;
-    margin-top: 8px;
+    margin-top: 10px;
     border: none;
 }
 
 #entrar {
-    background-color: #49a09d;
+    background-color: var(--roxo);
     color: white;
+    font-weight: bold;
     border-radius: 8px;
 }
 
 #esqueci-senha {
+    font-weight: bold;
     background-color: white;
-    border: 1px solid #49a09d;
+    border: 1px solid var(--roxo);
     border-radius: 8px;
-    color: #49a09d;
+    color: var(--roxo);
 }
 
 #entrar:hover{
     cursor: pointer;
-    background-color: #68e4e0;
-    color: #5f2cb2;
+    font-weight: bold;
+    background-color: var(--verde);
+    color: var(--roxo);
+    border: 2px solid var(--roxo);
 }
 
 #esqueci-senha:hover {
     cursor: pointer;
-    background-color: #24504e;
-    border: 1px solid #24504e;
-    color: white;
+    font-weight: bold;
+    background-color: var(--verde);
+    color: var(--roxo);
+    border: 2px solid var(--roxo);
 }
