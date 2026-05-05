@@ -3,10 +3,10 @@
 /* 
 PALETA DE CORES
 Verde: #49a09d
-Lilás: 5f2cb2
+Lilás: #5f2cb2
 */
 
-*{
+* {
     padding: 0px;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -15,12 +15,11 @@ Lilás: 5f2cb2
 body {
     height: 100vh;
     width: 100vw;
-    background-color: lightblue;
+    background-color: #5f2cb2;
     position: relative;
 }
 
 main {
-    background-color: silver;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -28,17 +27,78 @@ main {
 }
 
 section#login {
-    width: 400px;
+    width: 250px;
 }
 
 div#imagem {
+    height: 200px;
     background-image: url(../imagens/bg-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+
 }
 
 div#formulario {
-    height: 200px;
+    height: 350px;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    padding: 10px;
 }
 
+div#formulario h1 {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+div#formulario p {
+    text-align: justify;
+    line-height: 1.3em;
+}
+
+#div-email, #div-senha {
+    background-color: #5f2cb2;
+    border-radius: 8px;
+    margin-top: 8px;
+    padding: 9px;
+}
+
+#iemail, #isenha {
+    padding: 8px;
+    background-color: #49a09d;
+    border-radius: 8px;
+    border: none;
+}
+
+#entrar, #esqueci-senha {
+    width: 100%;
+    padding: 11px;
+    margin-top: 8px;
+    border: none;
+}
+
+#entrar {
+    background-color: #49a09d;
+    color: white;
+    border-radius: 8px;
+}
+
+#esqueci-senha {
+    background-color: white;
+    border: 1px solid #49a09d;
+    border-radius: 8px;
+    color: #49a09d;
+}
+
+#entrar:hover{
+    cursor: pointer;
+    background-color: #68e4e0;
+    color: #5f2cb2;
+}
+
+#esqueci-senha:hover {
+    cursor: pointer;
+    background-color: #24504e;
+    border: 1px solid #24504e;
+    color: white;
+}
