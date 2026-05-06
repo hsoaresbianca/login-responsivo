@@ -7,8 +7,8 @@
     }
     
     section#login {
-        width: 80vw;
-        height: 400px;
+        width: 85vw;
+        height: 280px;
     }
 
     div#imagem {
@@ -20,7 +20,34 @@
     div#formulario {
         float: right;
         width: 70%;
+        padding: 0 10px 10px 10px;
     }
+
+    div#formulario h1 {
+        margin-bottom: 0px;
+    }
+
+    form {
+        margin-top: 5px;
+    }
+
+    #diva-email, #div-senha {
+        padding: 5px
+    }
+
+    #div-senha {
+    margin-top: 5px;
+    }
+
+    #iemail, #isenha {
+        padding: 5px;
+    }
+
+    #entrar, #esqueci-senha {
+    padding: 8px;
+    margin-top: 5px;
+}
+
 }
 
 @media screen and (min-width:1025px) {
