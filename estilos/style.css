@@ -31,16 +31,16 @@ main {
 }
 
 section#login {
+    background-color: white;
+    height: 550px;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
-    border-radius: 20px;
-    height: 600px;
-    width: 250px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    background-color: white;
+    transform: translate(-50%, -50%);
 }
 
 div#imagem {
@@ -64,7 +64,6 @@ div#formulario h1 {
 
 div#formulario p {
     text-align: justify;
-    line-height: 1.3em;
 }
 
 form {
@@ -83,9 +82,7 @@ form {
 
 ion-icon {
     color: white;
-    width: 25px;
-    height: 25px;
-    margin-right: 8px;
+    font-size: 1.5em;
 }
 
 #iemail, #isenha {
@@ -93,6 +90,12 @@ ion-icon {
     background-color: var(--verdinho);
     border-radius: 8px;
     border: none;
+    font-size: 1em;
+    width: 85%;
+}
+
+#iemail:focus-within, #isenha:focus-within {
+    background-color: white;
 }
 
 #entrar, #esqueci-senha {
@@ -107,6 +110,7 @@ ion-icon {
     color: white;
     font-weight: bold;
     border-radius: 8px;
+    font-size: 1em;
 }
 
 #esqueci-senha {
@@ -116,6 +120,7 @@ ion-icon {
     border: 1px solid var(--roxo);
     border-radius: 8px;
     color: var(--roxo);
+    font-size: 1em;
 }
 
 #entrar:hover{
